@@ -12,7 +12,7 @@ export default class HomeTab extends Component {
     render() {
         return (
             <View style={style.container}>
-                <Text>thirdFramasdasdas11111111de</Text>
+                <Text>thirdFrameasdasdasdasdasdasdasdasd</Text>
             </View>
         );
     }
