@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View,Text, StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 
 export default class HomeTab extends Component {
@@ -12,7 +12,7 @@ export default class HomeTab extends Component {
     render() {
         return (
             <View style={style.container}>
-                <Text>thirdFrame</Text>
+                
             </View>
         );
     }
