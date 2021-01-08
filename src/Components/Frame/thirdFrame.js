@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View,Text, StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
+import { Avatar, Badge, Icon, withBadge } from 'react-native-elements'
 
 export default class HomeTab extends Component {
     static navigationOptions = {
@@ -12,7 +13,8 @@ export default class HomeTab extends Component {
     render() {
         return (
             <View style={style.container}>
-                
+                <Badge value="P" status="error" />
+                <Text>thirdFrameasdasdasdasdasdasdasdasd</Text>
             </View>
         );
     }

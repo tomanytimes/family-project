@@ -1,0 +1,195 @@
+[33mcommit 2c4e44bb91d85f697ce75d68e5dcfb10bff1a6bc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: shlee <kya100789@naver.com>
+Date:   Wed Dec 16 20:53:12 2020 +0900
+
+    default case
+
+[1mdiff --git a/Components/Frame/FirstFrame.js b/Components/Frame/FirstFrame.js[m
+[1mindex beb9601..8699fc0 100644[m
+[1m--- a/Components/Frame/FirstFrame.js[m
+[1m+++ b/Components/Frame/FirstFrame.js[m
+[36m@@ -1,2 +1,27 @@[m
+ import React, { Component } from 'react';[m
+[31m-import { StyleSheet, Text, View } from 'react-native';[m
+\ No newline at end of file[m
+[32m+[m[32mimport { View, Text, StyleSheet } from 'react-native';[m
+[32m+[m[32mimport { AntDesign } from '@expo/vector-icons';[m[41m [m
+[32m+[m
+[32m+[m[32mexport default class HomeTab extends Component {[m
+[32m+[m[32m    static navigationOptions = {[m
+[32m+[m[32m        tabBarIcon: ({ tintColor }) => ([m
+[32m+[m[32m            <AntDesign name="user" size={24} style={{ color: tintColor }} />[m
+[32m+[m[32m        )[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    render() {[m
+[32m+[m[32m        return ([m
+[32m+[m[32m            <View style={style.container}>[m
+[32m+[m[32m                <Text>FirstFrame</Text>[m
+[32m+[m[32m            </View>[m
+[32m+[m[32m        );[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[41m [m
+[32m+[m[32mconst style = StyleSheet.create({[m
+[32m+[m[32m    container: {[m
+[32m+[m[32m        flex: 1,[m
+[32m+[m[32m        alignItems: 'center',[m
+[32m+[m[32m        justifyContent: 'center',[m
+[32m+[m[32m    }[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/Components/Frame/SecondFrame.js b/Components/Frame/SecondFrame.js[m
+[1mindex beb9601..ae7690b 100644[m
+[1m--- a/Components/Frame/SecondFrame.js[m
+[1m+++ b/Components/Frame/SecondFrame.js[m
+[36m@@ -1,2 +1,27 @@[m
+ import React, { Component } from 'react';[m
+[31m-import { StyleSheet, Text, View } from 'react-native';[m
+\ No newline at end of file[m
+[32m+[m[32mimport { View, Text, StyleSheet } from 'react-native';[m
+[32m+[m[32mimport { AntDesign } from '@expo/vector-icons';[m[41m [m
+[32m+[m
+[32m+[m[32mexport default class HomeTab extends Component {[m
+[32m+[m[32m    static navigationOptions = {[m
+[32m+[m[32m        tabBarIcon: ({ tintColor }) => ([m
+[32m+[m[32m            <AntDesign name="home" size={24} style={{ color: tintColor }} />[m
+[32m+[m[32m        )[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    render() {[m
+[32m+[m[32m        return ([m
+[32m+[m[32m            <View style={style.container}>[m
+[32m+[m[32m                <Text>SecondTab</Text>[m
+[32m+[m[32m            </View>[m
+[32m+[m[32m        );[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[41m [m
+[32m+[m[32mconst style = StyleSheet.create({[m
+[32m+[m[32m    container: {[m
+[32m+[m[32m        flex: 1,[m
+[32m+[m[32m        alignItems: 'center',[m
+[32m+[m[32m        justifyContent: 'center',[m
+[32m+[m[32m    }[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/Components/Frame/thirdFrame.js b/Components/Frame/thirdFrame.js[m
+[1mindex beb9601..e8a5876 100644[m
+[1m--- a/Components/Frame/thirdFrame.js[m
+[1m+++ b/Components/Frame/thirdFrame.js[m
+[36m@@ -1,2 +1,27 @@[m
+ import React, { Component } from 'react';[m
+[31m-import { StyleSheet, Text, View } from 'react-native';[m
+\ No newline at end of file[m
+[32m+[m[32mimport { View, Text, StyleSheet } from 'react-native';[m
+[32m+[m[32mimport { AntDesign } from '@expo/vector-icons';[m[41m [m
+[32m+[m
+[32m+[m[32mexport default class HomeTab extends Component {[m
+[32m+[m[32m    static navigationOptions = {[m
+[32m+[m[32m        tabBarIcon: ({ tintColor }) => ([m
+[32m+[m[32m            <AntDesign name="search1" size={24} style={{ color: tintColor }} />[m
+[32m+[m[32m        )[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    render() {[m
+[32m+[m[32m        return ([m
+[32m+[m[32m            <View style={style.container}>[m
+[32m+[m[32m                <Text>thirdFrame</Text>[m
+[32m+[m[32m            </View>[m
+[32m+[m[32m        );[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[41m [m
+[32m+[m[32mconst style = StyleSheet.create({[m
+[32m+[m[32m    container: {[m
+[32m+[m[32m        flex: 1,[m
+[32m+[m[32m        alignItems: 'center',[m
+[32m+[m[32m        justifyContent: 'center',[m
+[32m+[m[32m    }[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/Components/MainScreen.js b/Components/MainScreen.js[m
+[1mindex 8a88501..74c7040 100644[m
+[1m--- a/Components/MainScreen.js[m
+[1m+++ b/Components/MainScreen.js[m
+[36m@@ -1,25 +1,49 @@[m
+ import React, { Component } from 'react';[m
+[31m-import { StyleSheet, Text, View } from 'react-native';[m
+[31m-import { createBottomTabNavigator, createAppContainer } from 'react-navigation-tabs'; [m
+[32m+[m[32mimport { Platform , StyleSheet, Text, View } from 'react-native';[m
+[32m+[m[32mimport { createAppContainer } from 'react-navigation';[m
+[32m+[m[32mimport { createMaterialTopTabNavigator} from 'react-navigation-tabs';[m[41m [m
+ import FirstFrame from './Frame/FirstFrame'[m
+ import SecondFrame from './Frame/SecondFrame'[m
+ import thirdFrame from './Frame/thirdFrame'[m
+ [m
+[31m-// 하단 탭 네비게이터 생성[m
+[31m-const AppTabNavigator = createBottomTabNavigator({[m
+[31m-  HomeTab: { screen: HomeTab },[m
+[31m-  SearchTab: { screen: SearchTab },[m
+[31m-  AddMediaTab: { screen: AddMediaTab },[m
+[31m-  LikesTab: { screen: LikesTab },[m
+[31m-  ProfileTab: { screen: ProfileTab }[m
+[32m+[m[32mconst AppTabNavigator = createMaterialTopTabNavigator({[m
+[32m+[m[32m  FirstFrame: { screen: FirstFrame },[m
+[32m+[m[32m  SecondFrame: { screen: SecondFrame },[m
+[32m+[m[32m  thirdFrame: { screen: thirdFrame }[m
+[32m+[m[32m}, {[m
+[32m+[m[32m  animationEnabled: true,[m
+[32m+[m[32m  swipeEnabled: true,[m
+[32m+[m[32m  tabBarPosition: "bottom",[m
+[32m+[m[32m  tabBarOptions: {[m
+[32m+[m[32m    style: {[m
+[32m+[m[32m      ...Platform.select({[m
+[32m+[m[32m        ios:{[m
+[32m+[m[32m          backgroundColor:'white',[m
+[32m+[m[32m        },[m
+[32m+[m[32m        android: {[m
+[32m+[m[32m          backgroundColor:'white',[m
+[32m+[m[32m        },[m
+[32m+[m[32m        web: {[m
+[32m+[m[32m          backgroundColor:'white',[m
+[32m+[m[32m        }[m
+[32m+[m[32m      })[m
+[32m+[m[32m    },[m
+[32m+[m[32m    activeTintColor: '#000',[m
+[32m+[m[32m    inactiveTintColor: '#d1cece',[m
+[32m+[m[32m    upperCaseLabel: false,[m
+[32m+[m[32m    showLabel: false,[m
+[32m+[m[32m    showIcon: true,[m
+[32m+[m[32m  }[m
+ });[m
+ [m
+[32m+[m
+ const AppTabContainet = createAppContainer(AppTabNavigator);[m
+ [m
+ export default class MainScreen extends Component {[m
+   [m
+[31m- // navigationOptions 코드 생략[m
+[31m-[m
+[32m+[m[32m  static navigationOptions = {[m
+[32m+[m[32m    headerShown: false[m
+[32m+[m[32m  }[m
+   render() {[m
+     return <AppTabContainet/>; // AppTabContainet 컴포넌트를 리턴한다.[m
+   }[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex ee093fe..58140fe 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -1093,6 +1093,15 @@[m
+         "to-fast-properties": "^2.0.0"[m
+       }[m
+     },[m
+[32m+[m[32m    "@callstack/react-theme-provider": {[m
+[32m+[m[32m      "version": "3.0.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@callstack/react-theme-provider/-/react-theme-provider-3.0.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Iec+ybWN0FvNj87sD3oWo/49edGUP0UOSdMnzCJEFJIDYr992ECIuOV89burAAh2/ibPCxgLiK6dmgv2mO/8Tg==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "deepmerge": "^3.2.0",[m
+[32m+[m[32m        "hoist-non-react-statics": "^3.3.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "@cnakazawa/watch": {[m
+       "version": "1.0.
